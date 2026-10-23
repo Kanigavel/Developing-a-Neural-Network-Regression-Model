@@ -144,7 +144,7 @@ plt.xlabel("Epoch")
 plt.ylabel("MSE Loss")
 plt.title("Student Marks Prediction - Training Loss")
 plt.show()
-new_student = [[9]]
+new_student = [[7]]
 
 new_student_scaled = scaler.transform(new_student)
 
@@ -156,7 +156,7 @@ new_student_tensor = torch.tensor(
 with torch.no_grad():
     predicted_marks = model(new_student_tensor).item()
 
-print(f"Predicted Exam Marks for 10 Study Hours: {predicted_marks:.2f}")
+print(f"Predicted Exam Marks for 7 Study Hours: {predicted_marks:.2f}")
 ```
 
 ### Dataset Information
